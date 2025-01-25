@@ -332,3 +332,40 @@ body.dark-mode .social-icon {
 body.dark-mode .social-icon:hover {
     color: var(--accent-color); /* تغيير اللون عند التحويم */
 }
+
+/* تنسيق قسم Contact Us */
+#contact {
+    background-color: var(--light-color); /* لون الخلفية */
+    padding: 50px 0; /* المسافات الداخلية */
+}
+
+#contact .card {
+    border: none; /* إزالة الحدود */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+}
+
+#contact .card-title {
+    font-family: 'Bebas Neue', sans-serif; /* خط العنوان */
+    font-size: 1.8rem; /* حجم العنوان */
+    color: var(--primary-color); /* لون العنوان */
+}
+
+#contact .list-unstyled li {
+    margin-bottom: 10px; /* المسافة بين العناصر */
+    font-size: 1.1rem; /* حجم النص */
+}
+
+#contact .form-label {
+    font-weight: bold; /* جعل التسميات غامقة */
+}
+
+#contact .btn-primary {
+    background-color: var(--accent-color); /* لون الزر */
+    border: none; /* إزالة الحدود */
+    padding: 10px 20px; /* حجم الزر */
+    font-size: 1rem; /* حجم النص داخل الزر */
+}
+
+#contact .btn-primary:hover {
+    background-color: var(--secondary-color); /* لون الزر عند التحويم */
+}

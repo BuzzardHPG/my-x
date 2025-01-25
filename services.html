@@ -18,7 +18,7 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="images/logo.png" alt="Eastern-CADD Logo" width="50">
@@ -32,9 +32,10 @@
                     <li class="nav-item"><a class="nav-link" href="about.html" data-lang="about">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html" data-lang="services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="courses.html" data-lang="courses">Courses</a></li>
-                    <li class="nav-item"><a class="nav-link" href="who-we-are.html" data-lang="who-we-are">Who We Are</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html" data-lang="contact">Contact</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="who-we-are.html" data-lang="who-we-are">Who We Are</a></li> -->
                     <li class="nav-item"><a class="nav-link" href="projects.html" data-lang="projects">Previous Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" data-lang="contact">Contact</a></li>
+                    <li></li>
                 </ul>
                 <button id="theme-toggle" class="btn btn-outline-light ms-3">
                     <span class="icon">🌙</span>
@@ -144,6 +145,53 @@
             </div>
         </div>
     </section>
+
+    <!-- Contact Us Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4" data-lang="contact-us">Contact Us</h2>
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title" data-lang="contact-info">Contact Information</h5>
+                        <ul class="list-unstyled">
+                            <li><strong data-lang="location">Location:</strong> Cairo, Egypt</li>
+                            <li><strong data-lang="phone">Phone:</strong> +201553994116</li>
+                            <li><strong data-lang="email">Email:</strong> info@eastern-cadd.com</li>
+                            <li><strong data-lang="website">Website:</strong> www.eastern-cadd.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" data-lang="send-message">Send Us a Message</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label" data-lang="name">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label" data-lang="email">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label" data-lang="message">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" data-lang="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
