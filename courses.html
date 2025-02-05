@@ -47,9 +47,92 @@
         </div>
     </nav>
 
-    <section id="courses" class="py-5 text-center">
+    <!-- Our Features of our courses Section -->
+    <section id="coursesfeatures" class="py-5">
         <div class="container">
-            <h2 class="display-5" data-lang="courses">Courses</h2>
+            <h2 class="text-center mb-5" data-lang="our-values">Features of our courses</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="practical-oriented">Practical-Oriented Training</h5>
+                            <p class="card-text" data-lang="practical-oriented-text">
+                                <ul>
+                                    <li>All courses are designed to provide a
+                                        hands-on learning experience, focusing
+                                        more on practical application than
+                                        theoretical knowledge.</li>
+                                    <li> Practical projects are provided at the end
+                                        of each course to ensure the application of
+                                        what has been learned.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="tangible-tools">Tangible Tools and Equipment</h5>
+                            <p class="card-text" data-lang="tangible-tools-text">
+                                <ul>
+                                    <li>Modern tools and software are used in
+                                        training, such as:
+                                        <ul type="circle">
+                                            <li>3D Printers.</li>
+                                            <li>Robots and Automated Systems.</li>
+                                            <li>Microcontrollers (Arduino, AVR, PIC).</li>
+                                            <li>Engineering Design Software (
+                                                Inventor, SolidWorks, Fusion 360).</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="certified-courses">Certified Courses</h5>
+                            <p class="card-text" data-lang="certified-courses-text">
+                                <ul>
+                                    <li> All courses offer certificates accredited by
+                                        Eastern-CADD (licensed and accredited in
+                                        the market).</li>
+                                        <li>Training on the Latest Technologies:
+                                            <ul type="circle">
+                                                <li>Course content is continuously updated
+                                                    to include the latest technologies and
+                                                    trends in various fields.</li>
+                                            </ul>
+                                        </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="prof-team">Professional Training Team</h5>
+                            <p class="card-text" data-lang="prof-team-text">
+                                <ul>
+                                    <li>Training is conducted by a team of experts
+                                        with extensive experience in their fields.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="py-5 text-center sec-diff">
+        <div class="container">
+            <h2 class="display-5" data-lang="courses">our Courses</h2>
             <div class="row">
                 <!-- Web Design Card -->
                 <div class="col-md-4 mb-4">
@@ -77,6 +160,27 @@
                     </div>
                 </div>
 
+                <!-- Desktop Development Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card course-card" style="background-image: url('images/desk-dev.jpg');">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="mobile-dev">Desktop Development</h5>
+                            <div class="course-options">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cModal">C</button>
+                                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#cppModal">C++</button>
+                            </div>
+                            <div class="course-options" style="margin-top: 15px;">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#csModal">C#</button>
+                                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#pythonModal">Python</button>
+                            </div>
+                            <div class="course-options" style="margin-top: 15px;">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#javaModal">Java</button>
+                                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#guiModal">GUI</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Electrical Systems Card -->
                 <div class="col-md-4 mb-4">
                     <div class="card course-card" style="background-image: url('images/elecsys.jpg');">
@@ -99,6 +203,30 @@
                                 <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#arduinoModal">Arduino</button>
                                 <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#espModal">ESP</button>
                             </div>
+                            <div class="course-options" style="margin-top: 15px;">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#raspiModal">Raspberry Pi</button>
+                                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#picModal">PIC</button>
+                            </div>
+                            <div class="course-options" style="margin-top: 15px;">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#avrModal">AVR</button>
+                                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#armModal">ARM</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Engineering Design Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card course-card" style="background-image: url('images/engdesign.avif');">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="engineering-design">Engineering Design</h5>
+                            <div class="course-options">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mech1Modal">Mechanical 1</button>
+                                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#mech2Modal">Mechanical 2</button>
+                            </div>
+                            <div class="course-options" style="margin-top: 15px;">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#3dPrintingModal">3D Printing</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -111,32 +239,6 @@
                             <div class="course-options">
                                 <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rosModal">ROS</button>
                                 <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#gazeboModal">Gazebo</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Intellectual Property & Engineering Research Card -->
-                <div class="col-md-4 mb-4">
-                    <div class="card course-card" style="background-image: url('images/research.jpg');">
-                        <div class="card-body">
-                            <h5 class="card-title" data-lang="ip-research">Intellectual Property & Research</h5>
-                            <div class="course-options">
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ipModal">IP Basics</button>
-                                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#researchModal">Research Methods</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Engineering Design Card -->
-                <div class="col-md-4 mb-4">
-                    <div class="card course-card" style="background-image: url('images/engdesign.avif');">
-                        <div class="card-body">
-                            <h5 class="card-title" data-lang="engineering-design">Engineering Design</h5>
-                            <div class="course-options">
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#autodeskModal">Autodesk Inventor</button>
-                                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#3dPrintingModal">3D Printing</button>
                             </div>
                         </div>
                     </div>
@@ -164,6 +266,14 @@
                                 <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lightCurrentModal">Light Current</button>
                                 <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#bmsModal">BMS</button>
                             </div>
+                            <div class="course-options" style="margin-top: 15px;">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#homeautoModal">Home Automation</button>
+                                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#publicaddModal">Public Address</button>
+                            </div>
+                            <div class="course-options" style="margin-top: 15px;">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#iotModal">IOT</button>
+                                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#voicecomModal">Voice Communication</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -176,6 +286,23 @@
                             <div class="course-options">
                                 <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#firefightingModal">Firefighting</button>
                                 <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#plumbingModal">Plumbing</button>
+                            </div>
+                            <div class="course-options" style="margin-top: 15px;">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hvacModal">HVAC</button>
+                                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#revitModal">Revit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Intellectual Property & Engineering Research Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card course-card" style="background-image: url('images/research.jpg');">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="ip-research">Intellectual Property & Research</h5>
+                            <div class="course-options">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ipModal">IP Basics</button>
+                                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#researchModal">Research Methods</button>
                             </div>
                         </div>
                     </div>
@@ -984,7 +1111,7 @@
     </div>
 
     <!-- Contact Us Section -->
-<section id="contact" class="py-5 sec-diff">
+<section id="contact" class="py-5">
     <div class="container">
         <h2 class="text-center mb-4" data-lang="contact-us">Contact Us</h2>
         <div class="row">
