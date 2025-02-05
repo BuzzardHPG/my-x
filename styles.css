@@ -259,8 +259,8 @@ footer {
     color: var(--light-color);
     text-align: center;
     padding: 20px;
-    margin-top: 5px;
-    box-shadow: 0 -5px 10px -5px var(--dark-color);
+    /* margin-top: 5px; */
+    /* box-shadow: 0 -5px 10px -5px var(--dark-color); */
     font-family: 'Raleway', sans-serif; /* خط النصوص العادية */
 }
 
@@ -335,7 +335,7 @@ body.dark-mode .modal-footer .btn:hover {
 }
 
 body.dark-mode .footer {
-    box-shadow: 0 -5px 10px -5px var(--orange-color);
+    /* box-shadow: 0 -5px 10px -5px var(--orange-color); */
 }
 
 /* Dark Mode Adjustments */
