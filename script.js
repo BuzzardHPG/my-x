@@ -97,12 +97,12 @@ const translations = {
         "integrity-text": "We conduct our business with the highest level of integrity, ensuring transparency and trust in all our dealings.",
         "our-partners": "Our Partners",
         "contact-info": "Contact Information",
-    "location": "Location:",
-    "phone": "Phone:",
-    "website": "Website:",
-    "send-message": "Send Us a Message"
-    },
-    "ar": {
+        "location": "Location:",
+        "phone": "Phone:",
+        "website": "Website:",
+        "send-message": "Send Us a Message"
+        },
+        "ar": {
         "home": "الرئيسية",
         "about": "عن الشركة",
         "services": "الخدمات",
