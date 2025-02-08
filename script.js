@@ -24,6 +24,30 @@ themeToggle.addEventListener('click', () => {
     }
 });
 
+// إدارة المستخدمين
+const users = JSON.parse(localStorage.getItem('users')) || [];
+
+function registerUser(email, password) {
+    const user = { email, password };
+    users.push(user);
+    localStorage.setItem('users', JSON.stringify(users));
+}
+
+function loginUser(email, password) {
+    const user = users.find(u => u.email === email && u.password === password);
+    if (user) {
+        localStorage.setItem('loggedInUser', JSON.stringify(user));
+        return true;
+    }
+    return false;
+}
+
+// تسجيل الخروج
+function logout() {
+    localStorage.removeItem('loggedInUser');
+    window.location.href = 'index.html';
+}
+
 // Toggle Language between English and Arabic
 const languageToggle = document.getElementById('language-toggle');
 const languageElements = document.querySelectorAll('[data-lang]');
@@ -100,7 +124,10 @@ const translations = {
         "location": "Location:",
         "phone": "Phone:",
         "website": "Website:",
-        "send-message": "Send Us a Message"
+        "send-message": "Send Us a Message",
+        "login": "Login",
+        "username": "Username",
+        "password": "Password"
         },
         "ar": {
         "home": "الرئيسية",
@@ -172,7 +199,10 @@ const translations = {
         "location": "الموقع:",
         "phone": "الهاتف:",
         "website": "الموقع الإلكتروني:",
-        "send-message": "أرسل لنا رسالة"
+        "send-message": "أرسل لنا رسالة",
+        "login": "تسجيل الدخول",
+        "username": "اسم المستخدم",
+        "password": "كلمة المرور"
     }
 };
 
