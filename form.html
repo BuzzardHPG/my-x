@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج تسجيل</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>نموذج تسجيل</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">الاسم</label>
+                <input type="text" class="form-control" id="name" placeholder="ادخل اسمك">
+            </div>
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" class="form-control" id="email" placeholder="ادخل بريدك الإلكتروني">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="submitForm()">تسجيل</button>
+        </form>
+    </div>
+
+    <script>
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            const mailtoLink = `mailto:eng.abdelazim.mct@gmail.com?subject=تسجيل جديد&body=الاسم: ${name}%0Aالبريد الإلكتروني: ${email}`;
+            window.location.href = mailtoLink;
+        }
+    </script>
+</body>
+</html>
