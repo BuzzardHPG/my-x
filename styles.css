@@ -447,19 +447,39 @@ body.dark-mode .social-icon:hover {
     height: 90vh;
 }
 
-/* Loading Spinner */
-.loading-spinner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 4px solid var(--accent-color);
-    border-top: 4px solid var(--light-color);
+/* تنسيق عنصر الـ Loading */
+#content-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* خلفية شبه شفافة */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* تأكد من ظهوره فوق كل العناصر */
+}
+
+/* تنسيق الـ Spinner */
+.spinner {
+    border: 4px solid var(--accent-color); /* لون الحدود */
+    border-top: 4px solid var(--light-color); /* لون الجزء العلوي */
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    animation: spin 1s linear infinite;
-    z-index: 10;
+    animation: spin 1s linear infinite; /* دوران Spinner */
+}
+
+/* دوران الـ Spinner */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* إخفاء الـ Loading بعد اكتمال التحميل */
+#content-loading.hidden {
+    display: none;
 }
 
 @keyframes spin {
@@ -525,19 +545,20 @@ body.dark-mode .social-icon:hover {
 }
 
 /* تخصيص scroll bar للوضع الليلي */
-body.dark-mode::-webkit-scrollbar-track {
-    background: var(--background-dark);
-}
-
-body.dark-mode::-webkit-scrollbar-thumb {
-    background: var(--orange-color);
-    border: 3px solid var(--background-dark);
-}
 
 body.dark-mode::-webkit-scrollbar-thumb:hover {
     background: var(--orange-light);
 }
 
+body.dark-mode::-webkit-scrollbar-track {
+    background: var(--background-dark) !important;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+    background: var(--orange-color) !important;
+    border: 3px solid var(--background-dark) !important;
+}
+
 body.dark-mode * {
-    scrollbar-color: var(--orange-color) var(--background-dark);
+    scrollbar-color: var(--orange-color) var(--background-dark) !important;
 }

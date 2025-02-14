@@ -24,6 +24,22 @@ themeToggle.addEventListener('click', () => {
     }
 });
 
+// إخفاء الـ Loading بعد تحميل المحتوى
+function hideLoading() {
+    const loadingElement = document.getElementById('content-loading');
+    if (loadingElement) {
+        loadingElement.classList.add('hidden');
+    }
+}
+
+// إظهار الـ Loading عند بدء التحميل
+document.addEventListener('DOMContentLoaded', () => {
+    const loadingElement = document.getElementById('content-loading');
+    if (loadingElement) {
+        loadingElement.classList.remove('hidden');
+    }
+});
+
 // إدارة المستخدمين
 const users = JSON.parse(localStorage.getItem('users')) || [];
 
