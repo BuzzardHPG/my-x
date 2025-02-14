@@ -498,3 +498,46 @@ body.dark-mode .social-icon:hover {
         border-radius: 10px;
     }
 }
+
+/* تخصيص scroll bar للوضع العادي */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 10px;
+    border: 3px solid var(--light-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-color) var(--light-color);
+}
+
+/* تخصيص scroll bar للوضع الليلي */
+body.dark-mode::-webkit-scrollbar-track {
+    background: var(--background-dark);
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+    background: var(--orange-color);
+    border: 3px solid var(--background-dark);
+}
+
+body.dark-mode::-webkit-scrollbar-thumb:hover {
+    background: var(--orange-light);
+}
+
+body.dark-mode * {
+    scrollbar-color: var(--orange-color) var(--background-dark);
+}
