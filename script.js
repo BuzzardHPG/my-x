@@ -24,7 +24,9 @@ themeToggle.addEventListener('click', () => {
     }
 });
 
-// إخفاء الـ Loading بعد تحميل المحتوى
+// إخفاء الـ loading بعد 5 ثوانٍ كحد أقصى
+// setTimeout(hideLoading, 2500);
+
 function hideLoading() {
     const loadingElement = document.getElementById('content-loading');
     if (loadingElement) {
@@ -32,12 +34,14 @@ function hideLoading() {
     }
 }
 
-// إظهار الـ Loading عند بدء التحميل
+// إخفاء الـ loading بعد تحميل الصفحة بالكامل
+window.onload = function() {
+    hideLoading();
+};
+
+// أو إخفاء الـ loading بعد تحميل DOM فقط
 document.addEventListener('DOMContentLoaded', () => {
-    const loadingElement = document.getElementById('content-loading');
-    if (loadingElement) {
-        loadingElement.classList.remove('hidden');
-    }
+    hideLoading();
 });
 
 // إدارة المستخدمين
