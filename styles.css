@@ -441,6 +441,6 @@ body.dark-mode .social-icon:hover {
 }
 
 .regform {
-    width: 100vw;
-    height: 90vh;
+    width: 100dvw;
+    height: 90dvh;
 }
