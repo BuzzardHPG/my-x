@@ -439,3 +439,8 @@ body.dark-mode .social-icon:hover {
 #contact .btn-primary:hover {
     background-color: var(--secondary-color); /* لون الزر عند التحويم */
 }
+
+.regform {
+    width: 100vw;
+    height: 90vh;
+}
